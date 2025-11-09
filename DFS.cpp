@@ -15,7 +15,7 @@ bool dfs(int node, vector<bool>& visited, vector<bool>& recStack, vector<vector<
         }
     }
 
-    recStack[node] = false;
+    recStack[node] = false;//second commit
     return false;
 }
 
@@ -37,7 +37,7 @@ bool isCycle(int V, vector<pair<int, int>>& edges) {
 }
 
 int main() {
-    int V = 5;
+    int V = 5; //first commit
     vector<pair<int, int>> edges = {{0,1},{1,2},{2,0},{3,4}};
 
     if (isCycle(V, edges)) {
